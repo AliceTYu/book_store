@@ -1,0 +1,573 @@
+@import url(./reset_css.css);
+
+body{
+    height: 100%;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 1rem;
+    color: #FFFFFF;
+    background-color: #1C1C1C;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.container {
+    box-sizing: border-box;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+a{
+    color: #FFFFFF;
+}
+
+img {
+    width: 100%;
+}
+
+/* HEADER========================================================== */
+.header{
+    padding: 2rem 0;
+    z-index: 100;
+}
+
+.header_line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_logo{
+    width: 3rem;
+}
+
+
+/* NAV============================================================= */
+.nav_list{
+    display: flex;
+}
+
+.nav_item{
+    text-transform: uppercase;
+}
+
+.nav_item:not(:last-child){
+    padding-right: 1rem;
+}
+
+.nav_link{
+    font-weight: 600;
+    transition: color 0.5s;
+}
+
+.nav_link-active{
+    color: #9370DB;
+}
+
+.nav_link:hover{
+    color: #9370DB;
+}
+
+
+/* BTN============================================================= */
+.btn_link {
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: #4B0082;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.5s;
+}
+
+.btn_link:hover{
+    background-color: #8A2BE2;
+}
+
+
+/* MAIN============================================================= */
+.main{
+    flex: 1 1 auto;
+}
+
+
+/* WELCOME============================================================= */
+.welcome{
+    /* min-height: 100vh; */
+    padding: 13rem 0 15rem;
+    margin-top: -6rem;
+    font-weight: 500;
+    background-image: url('./src/img/image/book11.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.welcome_line{
+    max-width: 800px;
+}
+
+.welcome_subtitle{
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    padding-bottom: 0.5rem;
+}
+
+.welcome_title{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.welcome_text{
+    font-size: 1.1rem;
+    opacity: 0.8;
+    line-height: 1.6rem;
+    max-width: 550px;
+    margin-bottom: 1rem;
+}
+
+.welcome_btn{
+    margin-top: 3rem;
+}
+
+/* BOOK LIST=========================================================== */
+.book-list{
+    padding: 5rem 0;
+}
+
+.book-list_line{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.book-list_card{
+    background-color: #312F30;
+    width: calc(95% / 4);
+    border-radius: 0.7rem;
+    overflow: hidden;
+    text-align: center;
+}
+
+.book-list_img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.book-list_title{
+    font-weight: 500;
+    font-size: 1.3rem;
+    padding: 1rem 0.5rem 0.7rem;
+}
+
+.book-list_text{
+    padding: 0 0.5rem 2rem;
+    opacity: 0.7;
+}
+
+
+
+/* spectial=========================================================== */
+.spectial{
+    background-color: #312F30;
+    padding: 5rem 0;
+}
+
+.spectial_block{
+    padding-bottom: 1rem;
+}
+
+.spectial_line{
+    display: flex;
+    align-items: center;
+}
+
+.spectial_img{
+    /* width: 40rem; */
+    padding-right: 4rem;
+}
+
+.spectial_title{
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    font-weight: 500;
+}
+
+.spectial_text{
+    opacity: 0.7;
+    padding-bottom: 1rem;
+}
+
+.spectial_price{
+    padding-bottom: 2rem;
+    color: #9370DB;
+    font-weight: 500;
+}
+
+.spectial_price-old{
+    font-size: 0.7rem;
+    text-decoration: line-through;
+    color: #FFFFFF;
+    padding-left: 0.3rem;
+}
+
+
+/* product=========================================================== */
+.product {
+    padding: 5rem 0;
+}
+
+.product_line {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.product_card {    
+    width: calc(95% / 2);
+    min-height: 250px;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-color: #312F30;
+}
+
+.product_card:nth-child(even){
+    padding-left: 50px;
+}
+
+.product_card:nth-child(odd){
+    align-items: end;
+    padding-right: 50px;
+}
+
+.product_card_1{
+    background-image: url('./src/img/image/book_7.png');
+}
+
+.product-title {
+    padding-bottom: 0.7rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.product_text {
+    padding-bottom: 0.6rem;
+}
+
+.product_price {
+    color: #c800ff;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.product_price_old {
+    font-size: 0.8rem;
+    text-decoration: line-through;
+    color: #FFFFFF;
+    padding-left: 0.3rem;
+}
+
+.product_btn {
+    padding-top: 1rem;
+}
+
+.btn_link-small{
+    font-size: 0.7rem;
+    padding: 0.9rem 0.9rem;
+}
+
+
+/* feedback=========================================================== */
+.feedback {
+    padding: 2rem 0 6rem;
+}
+
+.feedback_line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 10rem;
+}
+
+.feedback_line_img {
+    padding-right: 5rem;
+}
+
+.feedback_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feedback_logo {
+    width: 100px;
+}
+
+.feedback_blockq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feedback_title {
+    opacity: 0.7;
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+    font-style: oblique;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.feedback_name {
+    padding-bottom: 0.2rem;
+}
+
+.feedback_view {
+    opacity: 0.7;
+}
+
+
+/* download=========================================================== */
+.download {
+    background-color: #312F30;
+    padding: 3rem 0;
+}
+
+.download_line {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.download_text {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+
+/* FOOTER=========================================================== */
+.footer{
+    padding: 3rem 0;
+}
+
+.footer_line{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_block{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_logo{
+    width: 80px;
+}
+
+.footer_link{
+    margin-top: 0.2rem;
+    transition: color 0.5s;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.footer_link_logo{
+    width: 1.5rem;
+    padding-right: 0.5rem;
+}
+
+.footer_link_text{
+    transition: color 0.5s;
+}
+
+.footer_link:hover,
+.footer_link_text:hover{
+    color: #9370DB;
+}
+
+.footer_nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_list:not(:last-child){
+    padding-right: 4rem;
+}
+
+.footer_link_social,
+.footer_link_title{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.footer_item:not(:last-child){
+    padding-bottom: 0.5rem;
+}
+
+.footer_item:first-child{
+    padding-bottom: 1rem;
+}
+
+.footer_link_social{
+    padding-bottom: 1rem;
+}
+
+.social_link_img{
+    width: 30px;
+}
+
+.social_link:not(:last-child){
+    margin-right: 0.5rem;
+}
+
+/* =========================================================== */
+@media (max-width: 1000px){
+    .feedback_line {
+        padding: 0;
+    }
+
+    .footer_line{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer_block:not(:last-child){
+        padding-bottom: 2rem;
+    }
+}
+
+@media (max-width: 768px){
+    .welcome{
+        margin-top: -14rem;
+    }
+    .book-list_line{
+        gap: 0.8rem;
+    }
+    .book-list_card{
+        width: calc(97% / 2);
+    }
+    .spectial_img{
+        padding-right: 2rem;
+    }
+    .feedback_line{
+        flex-direction: column;
+    }
+    .feedback_line_img{
+        padding-right: 2rem;
+    }
+    .header{
+        padding: 1rem 0;
+    }
+    .header_line{
+        flex-direction: column;
+        align-items: end;
+    }
+    .nav_list{
+        flex-direction: column;
+        align-items: end;
+    }
+    .header_btn{
+        display: none;
+    }
+    .nav_item:not(:last-child){
+        padding-right: 0;
+        padding-bottom: 1rem;
+    }
+}
+
+@media (max-width: 660px){
+    .welcome{
+        padding: 14rem 0;
+    }
+    .spectial{
+        padding: 3rem 0;
+    }
+    .feedback{
+        padding: 0 0 3rem;
+    }
+    .feedback_line_img{
+        padding-right: 0;
+    }
+    .spectial_line{
+        flex-direction: column;
+    }
+    .spectial_block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .spectial_text{
+        text-align: center;
+    }
+    .product_card:nth-child(even){
+        padding-left: 20px;
+    }
+    .product_card:nth-child(odd){
+        padding-right: 20px;
+    }
+    .product_card{
+        width: 100%;
+    }
+    .footer_block{
+        align-items: center;
+    }
+    .footer_nav{
+        flex-direction: column;
+    }
+    .footer_list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer_list:not(:last-child){
+        padding-right: 0;
+        padding-bottom: 1rem;
+    }
+}
+
+@media (max-width: 500px){
+    .book-list_card{
+        width: 100%;
+    }
+    .spectial_title{
+        font-size: 1.5rem;
+    }
+    .spectial_img{
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 400px){
+    .download_line{
+        flex-direction: column;
+    }
+    .download_btn {
+        margin-top: 2rem;
+    }
+    .welcome_title{
+        font-size: 2rem;
+    }
+    .welcome_subtitle,
+    .welcome_text{
+        font-size: 0.8rem;
+    }
+}
